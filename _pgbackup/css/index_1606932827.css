@@ -1,0 +1,48 @@
+.dropdown-menu a:active {
+    background-color: #eeb673;
+    color: #471919;
+}
+
+#navbarUser {
+    color: #dfdfdf;
+}
+
+#navbarTopo {
+    background-color: #db8b8b;
+}
+
+.navbarTopo {
+    background-color: #9c5500;
+}
+
+.sidebar {
+    background-color: #d88b2f;
+    min-width: 250px;
+    max-width: 250px;
+    height: calc(100vh - 56px);
+    transition: all 0.3s;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 1rem 0.75rem;
+    color: #eaeaea;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul .active a {
+    color: #471919;
+    background-color: #eeb673;
+}
+
+@media (max-width: 768px){
+    .sidebar {
+        margin-left: -250px;
+    }
+
+    .sidebar.toggled {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,80 @@
+.dropdown-menu a:active {
+    background-color: #eeb673;
+    color: #471919;
+}
+
+#navbarUser {
+    color: #dfdfdf;
+}
+
+#navbarTopo {
+    background-color: #db8b8b;
+}
+
+.navbarTopo {
+    background-color: #9c5500;
+}
+
+.sidebar {
+    background-color: #d88b2f;
+    min-width: 250px;
+    max-width: 250px;
+    height: calc(100vh - 56px);
+    transition: all 0.3s;
+}
+
+.sidebar ul li a {
+    padding: 1rem 0.75rem;
+    color: #eaeaea;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul .active a {
+    color: #471919;
+    background-color: #eeb673;
+}
+
+.sidebar ul ul a {
+    padding-left: 2.5rem;
+    background-color: #dc9e52;
+}
+
+.sidebar.toggled {
+    margin-left: -250px;
+}
+
+@media (max-width: 768px){
+    .sidebar {
+        margin-left: -250px;
+    }
+
+    .sidebar.toggled {
+        margin-left: 0px;
+    }
+}
+
+.sidebar [data-toggle="collapse"] {
+    position: relative;
+}
+
+.sidebar [data-toggle="collapse"]:before {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 1rem;
+}
+
+.sidebar ul ul #iconesSubmenu {
+    position: relative;
+    right: 10px;
+}
+
+.sidebar ul .iconesMenu {
+    position: relative;
+    right: 25px;
+    font-size: 20px;
+}
